@@ -1,0 +1,101 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.ibb.co.com/yFscVc73/6137.webp",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.ibb.co.com/Kxf6RqQW/growm.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Heated Dog House Setup",
+    "providerName": "WarmNest Pets",
+    "providerEmail": "support@warmnest.com",
+    "price": 45,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Installation of insulated and heated dog houses to keep pets warm during winter.",
+    "image": "https://i.ibb.co.com/LdkG4wM5/e37f95d2-1798-49f0-a2ab-e4bd922e15cf-e5db5e920daf38942ff943cf7705c37d.webp",
+    "category": "Housing"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Winter Nutrition Consultation",
+    "providerName": "HealthyPaws VetCare",
+    "providerEmail": "contact@healthypaws.com",
+    "price": 20,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Customized winter diet plans ensuring your pet gets the right nutrients.",
+    "image": "https://i.ibb.co.com/pjW76RQ1/65e2234ebf4a07f72f25832b-65e1ff3c42bf6c44709d4d3c-Nutrition20-3.jpg",
+    "category": "Health"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Dog Boots Fitting Service",
+    "providerName": "PawSteps Store",
+    "providerEmail": "service@pawsteps.com",
+    "price": 18,
+    "rating": 4.8,
+    "slotsAvailable": 8,
+    "description": "Perfect-fitting winter boots for dogs to protect against frostbite and cold surfaces.",
+    "image": "https://i.ibb.co.com/ZpC73J95/istockphoto-456800029-612x612.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Warm Blanket & Bedding Customization",
+    "providerName": "SnugglePet Crafts",
+    "providerEmail": "team@snugglepet.com",
+    "price": 28,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Tailor-made winter blankets and fleece bedding for ultimate pet comfort.",
+    "image": "https://i.ibb.co.com/vx2zZNsL/il-fullxfull-6540225761-beo1.jpg",
+    "category": "Accessories"
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Dog Winter Photography Session",
+    "providerName": "FrostyFrames Studio",
+    "providerEmail": "photos@frostyframes.com",
+    "price": 35,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Stylized winter-themed pet photography with props and cozy outfits.",
+    "image": "https://i.ibb.co.com/cKhRnZy6/images.jpg",
+    "category": "Photography"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Winter Fitness Walk & Training",
+    "providerName": "ActiveTail Trainers",
+    "providerEmail": "train@activetail.com",
+    "price": 22,
+    "rating": 4.5,
+    "slotsAvailable": 7,
+    "description": "Guided winter walks and training sessions to keep dogs active and safe in the cold.",
+    "image": "https://i.ibb.co.com/HD3Hmy2p/Man-with-dog-on-a-leash-walking-on-snowy-pine-forest-in-winter-vvvita-Shutterstock.jpg",
+    "category": "Training"
+  }
+]
+
+
+
