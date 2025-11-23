@@ -14,10 +14,11 @@ const Login = () => {
   const handleGoogleRegister = () => {
 
     googleRegister()
-      .then(() =>
+      .then((result) =>
+      {
+        setUser(result.user)
         navigate(`${location.state ? location.state : '/'}`)
-      )
-
+      })
   }
 
   const handleLogin = (e) => {

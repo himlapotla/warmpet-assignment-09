@@ -52,7 +52,7 @@ const Navar = () => {
     
                 <div className="navbar-end gap-3">
                     {
-                        <img className='w-2/14 rounded-full cursor-pointer' title={user ? user.displayName : ' '} src={user ? user.photoURL : {usr}} alt="" />
+                        <img className='w-1/12 rounded-full cursor-pointer' title={user ? user.displayName : ' '} src={user ? user.photoURL : {usr}} alt="" />
                     }
                     
                     {
@@ -66,4 +66,3 @@ const Navar = () => {
 }
 
 export default Navar
-
