@@ -55,7 +55,6 @@ const allRouter = createBrowserRouter([
         ]
     },
 
-
 ])
 
 export default allRouter

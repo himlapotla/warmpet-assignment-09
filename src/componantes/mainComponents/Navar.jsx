@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import usr from '../../assets/user.png'
 import { Link, useNavigate } from 'react-router'
 import { AllContext } from '../../Provider/AuthProvider'
+import { toast } from 'react-toastify'
 
 const Navar = () => {
 
@@ -19,6 +20,7 @@ const Navar = () => {
         logOutt()
         .then(() => {
             navigate('/')
+            toast.success("You are logged out")
         })
     }
 

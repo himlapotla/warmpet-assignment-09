@@ -1,16 +1,16 @@
 import React, { useContext } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { AllContext } from '../../Provider/AuthProvider'
-import { GoogleAuthProvider } from 'firebase/auth'
-import { getAuth, signInWithPopup } from 'firebase/auth'
-import app from '../../Firebase/firebase.config'
-import { FaGoogle } from 'react-icons/fa'
+import Loading from '../Loading'
 
 const Register = () => {
 
-  const { createUser, updateUserProfile, setUser } = useContext(AllContext)
+  const { createUser, updateUserProfile, loading, setUser } = useContext(AllContext)
   const navigate = useNavigate()
 
+  if (loading) {
+    return <Loading> </Loading>
+  }
 
 
   const handleRegister = (e) => {
