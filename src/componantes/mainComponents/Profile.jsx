@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { AllContext } from '../../Provider/AuthProvider'
 import { Navigate } from 'react-router'
+import Loading from '../Loading'
 
 const Profile = () => {
 
@@ -18,7 +19,7 @@ const Profile = () => {
     }
 
     if (loading) {
-        return <p>LOADDING</p>
+        return <Loading> </Loading>
     }
 
     else if (user == null) {
@@ -34,7 +35,7 @@ const Profile = () => {
 
                     <div className=' rounded-2xl shadow-2xl p-10 space-y-2'>
 
-                        <p className='font-bold pb-4'> Your Profile Data </p>
+                        <p className='font-bold pb-4'> Hello {user.displayName} Your Profile Data is here </p>
 
                         <label className="label"> Your Name </label> <br />
                         <input name='name' type="text" className="input" defaultValue={user.displayName}/>

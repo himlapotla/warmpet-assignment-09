@@ -5,6 +5,7 @@ import ShowCards from './ShowCards'
 import Slider from '../HomePagElements/Slider'
 import PetProblems from '../HomePagElements/PetProblems'
 import Doctors from '../HomePagElements/Doctors'
+import Loading from '../Loading'
 
 
 const doctorPromise = fetch("/doctors.json").then((res) => res.json())
@@ -21,8 +22,7 @@ const Home = () => {
     <div>
 
       {
-        loading ? 'LOADING' :
-          (user ? user.displayName : 'nai')
+        loading && <Loading> </Loading> 
       } 
 
       <Slider> </Slider>

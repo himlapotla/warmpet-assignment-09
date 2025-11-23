@@ -9,6 +9,7 @@ import Forget from "../componantes/mainComponents/Forget";
 import Details from "../componantes/mainComponents/Details";
 import PrivateRout from "../Provider/PrivateRout";
 
+
 const allRouter = createBrowserRouter([
     {
         path: '/',
