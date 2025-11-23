@@ -8,7 +8,8 @@ import Profile from "../componantes/mainComponents/Profile";
 import Forget from "../componantes/mainComponents/Forget";
 import Details from "../componantes/mainComponents/Details";
 import PrivateRout from "../Provider/PrivateRout";
-import Error from "../componantes/mainComponents/Error";
+import Errorlyoutt from "../componantes/mainComponents/ErrorLayout/Errorlyoutt";
+import Error from "../componantes/mainComponents/ErrorLayout/Error";
 
 
 const allRouter = createBrowserRouter([
@@ -57,8 +58,14 @@ const allRouter = createBrowserRouter([
     },
 
     {
-        path:'*/',
-        element: <Error> </Error>
+        path:'*',
+        element: <Errorlyoutt> </Errorlyoutt>,
+        children:[
+            {
+                path: '*',
+                element: <Error> </Error>,
+            }
+        ]
     }
 
 ])

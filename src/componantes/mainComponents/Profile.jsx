@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { AllContext } from '../../Provider/AuthProvider'
-import { Navigate, useNavigate } from 'react-router'
+import { Navigate, useLocation, useNavigate } from 'react-router'
 import Loading from '../Loading'
 import { toast } from 'react-toastify'
 
@@ -8,6 +8,8 @@ const Profile = () => {
 
     const { user, loading, updateUserProfile } = useContext(AllContext)
     const navigate = useNavigate()
+
+    const loc =useLocation()
 
     const seeToast = () => {
         toast.success("Your Profile isUpdated.")
@@ -32,7 +34,7 @@ const Profile = () => {
 
     else if (user == null) {
         toast.success("Please login first to see your profile.")
-        return <Navigate to={'/auth/login'}> </Navigate>
+        return <Navigate state={loc.pathname} to={'/auth/login'}> </Navigate>
     }
 
     else {

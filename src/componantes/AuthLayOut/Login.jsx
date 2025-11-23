@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router'
 import { AllContext } from '../../Provider/AuthProvider'
-import { FaGoogle } from 'react-icons/fa'
+import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa'
 import Loading from '../Loading'
 import { toast } from 'react-toastify'
 
@@ -10,21 +10,25 @@ const Login = () => {
   const { logIn, loading, setUser, setMail, googleRegister } = useContext(AllContext)
   const navigate = useNavigate()
   const [err, setErr] = useState(null)
+  const [show, setShow] = useState(false)
 
   const location = useLocation()
   console.log(location);
 
+  const showPass = () => {
+    setShow(!show)
+  }
+
   const handleGoogleRegister = () => {
 
     googleRegister()
-      .then((result) =>
-      {
+      .then((result) => {
         setUser(result.user)
         navigate(`${location.state ? location.state : '/'}`)
       })
   }
 
-  if(loading) {
+  if (loading) {
     return <Loading> </Loading>
   }
 
@@ -60,17 +64,20 @@ const Login = () => {
         <input name='email' type="email" className="input" placeholder="Email" />
 
         <label className="label">Password</label> <br />
-        <input name='password' type="password" className="input" placeholder="Password" />
+        <div className='flex items-center gap-1'>
+          <input name='password' type={show ? "text" : "password"} className="input" placeholder="Password" />
+          <span onClick={showPass} className='p-1 border-1 rounded-2xl'> {show ? <FaEyeSlash> </FaEyeSlash> : <FaEye> </FaEye>  } </span>
+        </div>
 
         <p> <Link className="link link-hover" to={'/forget-passwrd'}> Forgot password?</Link> </p>
-        
+
         <button type='submit' className="btn bg-amber-400 mt-4 border-none w-full">Login</button>
 
         {
           err && <p className='text-red-600'> Please Provide Your Email/Password Correctly </p>
         }
 
-        <button type='button'  onClick={handleGoogleRegister} className='cursor-pointer mt-2 p-3 flex gap-2 items-center justify-center rounded-sm w-full bg-amber-400' > <FaGoogle></FaGoogle> Regiter with Google </button>
+        <button type='button' onClick={handleGoogleRegister} className='cursor-pointer mt-2 p-3 flex gap-2 items-center justify-center rounded-sm w-full bg-amber-400' > <FaGoogle></FaGoogle> Regiter with Google </button>
 
         <p className='pt-2'> Don't have an acount? <Link to={'/auth/register'}> <span className='underline text-blue-400'> Register </span>  </Link> </p>
 
