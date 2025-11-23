@@ -13,9 +13,9 @@ const Slider = () => {
                         <img
                             className="rounded-xl w-full h-80 object-cover"
                             src="https://i.ibb.co.com/bRJyC8QH/fit2.webp"
-                            alt=""/>
+                            alt="" />
 
-                        <div className="flex justify-center mt-4">
+                        <div className="flex justify-center mt-3">
                             <p className="text-3xl md:text-4xl font-bold text-amber-700 bg-amber-400 px-6 py-4 rounded-xl text-center leading-tight">
                                 Make your pet warm this winter <br />
                                 <span className="text-2xl md:text-3xl font-semibold">
@@ -42,9 +42,9 @@ const Slider = () => {
 
                         <div className="flex justify-center mt-4">
                             <p className="text-3xl md:text-4xl font-bold text-amber-700 bg-amber-400 px-6 py-4 rounded-xl text-center leading-tight">
-                                Warm Paws, Happy Dogs <br />
+                                Cozy Pets, Happy Hearts <br />
                                 <span className="text-2xl md:text-3xl font-semibold">
-                                    From grooming to snug winter outfits, we’ve got your furry friend covered.
+                                    Keep your little companion warm, safe, and stylish all winter long.
                                 </span>
                             </p>
                         </div>

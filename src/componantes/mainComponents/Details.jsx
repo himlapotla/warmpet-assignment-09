@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 const Details = () => {
 
     const handlsubmit = () => {
-        toast.success("You Boooked this service, we will call you letter.")
+        toast.success("You Boooked this service, we will mail you letter.")
     }
 
     const { id } = useParams()

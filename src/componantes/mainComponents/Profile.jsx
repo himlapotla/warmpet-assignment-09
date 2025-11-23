@@ -22,6 +22,7 @@ const Profile = () => {
 
         updateUserProfile( {displayName: name, photoURL: photo} )
         .then(() => {
+            
         })
     }
 
@@ -30,6 +31,7 @@ const Profile = () => {
     }
 
     else if (user == null) {
+        toast.success("Please login first to see your profile.")
         return <Navigate to={'/auth/login'}> </Navigate>
     }
 
