@@ -13,9 +13,9 @@ const PetProblems = () => {
             alt="Hypothermia"
           />
           <div className="space-y-2 mt-3">
-            <p className="font-bold text-2xl">Hypothermia</p>
-            <p className="text-xl">Signs: Shivering, lethargy, cold ears/paws</p>
-            <p className="text-xl">
+            <p className="font-bold text-xl">Hypothermia</p>
+            <p className="font-semibold">Signs: Shivering, lethargy, cold ears/paws</p>
+            <p className="font-semibold">
               Keep pets warm indoors, use pet sweaters, and limit outdoor exposure in extreme cold.
             </p>
           </div>
@@ -28,9 +28,9 @@ const PetProblems = () => {
             alt="Dry Skin"
           />
           <div className="space-y-2 mt-3">
-            <p className="font-bold text-2xl">Dry Skin</p>
-            <p className="text-xl">Signs: Itchy skin, flaky coat, redness</p>
-            <p className="text-xl">
+            <p className="font-bold text-xl">Dry Skin</p>
+            <p className="font-semibold">Signs: Itchy skin, flaky coat, redness</p>
+            <p className="font-semibold">
               Moisturize with pet-safe oils, provide a humidifier, and avoid over-bathing.
             </p>
           </div>
@@ -43,9 +43,9 @@ const PetProblems = () => {
             alt="Paw Injuries"
           />
           <div className="space-y-2 mt-3">
-            <p className="font-bold text-2xl">Paw Injuries</p>
-            <p className="text-xl">Signs: Limping, redness, cracked paw pads</p>
-            <p className="text-xl">
+            <p className="font-bold text-xl">Paw Injuries</p>
+            <p className="font-semibold">Signs: Limping, redness, cracked paw pads</p>
+            <p className="font-semibold">
               Use paw balms, clean paws after walks, and avoid salted sidewalks.
             </p>
           </div>
@@ -58,9 +58,9 @@ const PetProblems = () => {
             alt="Dehydration"
           />
           <div className="space-y-2 mt-3">
-            <p className="font-bold text-2xl">Dehydration</p>
-            <p className="text-xl">Signs: Dry nose, lethargy, less urination</p>
-            <p className="text-xl">
+            <p className="font-bold text-xl">Dehydration</p>
+            <p className="font-semibold">Signs: Dry nose, lethargy, less urination</p>
+            <p className="font-semibold">
               Ensure fresh water is always available, and limit snow ingestion.
             </p>
           </div>

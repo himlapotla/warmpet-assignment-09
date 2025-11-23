@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const ShowCards = ({ singleCards }) => {
 
-    console.log(singleCards);
+    // console.log(singleCards);
 
     return (
 

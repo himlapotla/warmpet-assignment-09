@@ -1,14 +1,21 @@
-import React, { useContext } from 'react'
+import React, { use, useContext } from 'react'
 import { AllContext } from '../../Provider/AuthProvider'
 import { useLoaderData } from 'react-router'
 import ShowCards from './ShowCards'
 import Slider from '../HomePagElements/Slider'
 import PetProblems from '../HomePagElements/PetProblems'
+import Doctors from '../HomePagElements/Doctors'
+
+
+const doctorPromise = fetch("/doctors.json").then((res) => res.json())
+console.log(doctorPromise);
+
 
 const Home = () => {
 
   const { user, loading } = useContext(AllContext)
   const data = useLoaderData()
+  const doctor = use(doctorPromise)
 
   return (
     <div>
@@ -28,9 +35,20 @@ const Home = () => {
       </div>
 
 
-      <p className='text-amber-400 text-4xl font-bold text-center py-12'> Common pet Cates for daily life </p>
+      <p className='text-amber-400 text-4xl font-bold text-center py-12'> Common pet Cates for daily life in this winter </p>
 
       <PetProblems> </PetProblems>
+
+      <p className='text-amber-400 text-4xl font-bold text-center py-12'> Meet our expert vets  </p>
+
+      {
+        <div className='grid grid-cols-4 w-11/12 mx-auto gap-4 '>
+          {
+            doctor.map(singlDoctor => <Doctors key={singlDoctor.id} doctor={singlDoctor}> </Doctors> )
+          }
+        </div>
+      }
+
 
 
     </div>
@@ -38,3 +56,4 @@ const Home = () => {
 }
 
 export default Home
+
