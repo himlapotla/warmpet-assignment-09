@@ -34,8 +34,7 @@ const Home = () => {
         }
       </div>
 
-
-      <p className='text-amber-400 text-4xl font-bold text-center py-12'> Common pet Cates for daily life in this winter </p>
+      <p className='text-amber-400 text-4xl font-bold text-center py-12'> Common pet Cares for daily life in this winter </p>
 
       <PetProblems> </PetProblems>
 
@@ -49,11 +48,8 @@ const Home = () => {
         </div>
       }
 
-
-
     </div>
   )
 }
 
 export default Home
-

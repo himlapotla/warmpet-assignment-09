@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
 import usr from '../../assets/user.png'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import { AllContext } from '../../Provider/AuthProvider'
 
 const Navar = () => {
+
+    const navigate = useNavigate()
 
     const links = <>
         <Link to={'/'}> <p className='font-semibold'>Home</p> </Link>
@@ -15,6 +17,9 @@ const Navar = () => {
 
     const handleOut = () => {
         logOutt()
+        .then(() => {
+            navigate('/')
+        })
     }
 
     return (
@@ -44,9 +49,10 @@ const Navar = () => {
                         </div>
                     </ul>
                 </div>
+    
                 <div className="navbar-end gap-3">
                     {
-                        <img className='w-1/12 rounded-full cursor-pointer' title={user ? user.displayName : ' '} src={user ? user.photoURL : 'nai'} alt="" />
+                        <img className='w-2/14 rounded-full cursor-pointer' title={user ? user.displayName : ' '} src={user ? user.photoURL : {usr}} alt="" />
                     }
                     
                     {

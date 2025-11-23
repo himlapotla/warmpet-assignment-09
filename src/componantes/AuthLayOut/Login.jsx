@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link, useNavigate } from 'react-router'
+import { Link, useLocation, useNavigate } from 'react-router'
 import { AllContext } from '../../Provider/AuthProvider'
 import { FaGoogle } from 'react-icons/fa'
 
@@ -8,12 +8,14 @@ const Login = () => {
   const { logIn, setUser, setMail, googleRegister } = useContext(AllContext)
   const navigate = useNavigate()
 
+  const location = useLocation()
+  console.log(location);
 
   const handleGoogleRegister = () => {
 
     googleRegister()
       .then(() =>
-        navigate('/')
+        navigate(`${location.state ? location.state : '/'}`)
       )
 
   }
@@ -29,7 +31,7 @@ const Login = () => {
     logIn(email, pass)
       .then((res) => {
         setUser(res.user)
-        navigate('/')
+        navigate(`${location.state ? location.state : '/'}`)
       })
   }
 
@@ -53,7 +55,7 @@ const Login = () => {
         
         <button type='submit' className="btn bg-amber-400 mt-4 border-none w-full">Login</button>
 
-        <button type='button'  onClick={handleGoogleRegister} className='mt-2 p-3 flex gap-2 items-center justify-center rounded-sm w-full bg-amber-400' > <FaGoogle></FaGoogle> Regiter with Google 
+        <button type='button'  onClick={handleGoogleRegister} className='cursor-pointer mt-2 p-3 flex gap-2 items-center justify-center rounded-sm w-full bg-amber-400' > <FaGoogle></FaGoogle> Regiter with Google 
         </button>
 
         <p className='pt-2'> Don't have an acount? <Link to={'/auth/register'}> <span className='underline text-blue-400'> Register </span>  </Link> </p>

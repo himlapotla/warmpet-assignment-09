@@ -7,6 +7,7 @@ import AuthLayOut from "../componantes/AuthLayOut/AuthLayOut";
 import Profile from "../componantes/mainComponents/Profile";
 import Forget from "../componantes/mainComponents/Forget";
 import Details from "../componantes/mainComponents/Details";
+import PrivateRout from "../Provider/PrivateRout";
 
 const allRouter = createBrowserRouter([
     {
@@ -32,7 +33,7 @@ const allRouter = createBrowserRouter([
             {
                 path: 'detail/:id',
                 loader: () => fetch(" /cardsData.json "),
-                element: <Details> </Details>
+                element: <PrivateRout> <Details> </Details> </PrivateRout>
             }
         ]
     },
