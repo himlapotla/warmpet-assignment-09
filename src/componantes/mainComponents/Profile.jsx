@@ -1,11 +1,18 @@
 import React, { useContext, useState } from 'react'
 import { AllContext } from '../../Provider/AuthProvider'
-import { Navigate } from 'react-router'
+import { Navigate, useNavigate } from 'react-router'
 import Loading from '../Loading'
+import { toast } from 'react-toastify'
 
 const Profile = () => {
 
     const { user, loading, updateUserProfile } = useContext(AllContext)
+    const navigate = useNavigate()
+
+    const seeToast = () => {
+        toast.success("Your Profile isUpdated.")
+        navigate('/')
+    }
 
     const handleUpdateProfile = (e) => {
 
@@ -46,7 +53,7 @@ const Profile = () => {
                         <label className="label"> Your Image </label> <br />
                         <input name='photo' type="text" className="input" defaultValue={user.photoURL} />
 
-                        <button type='submit' className="btn bg-amber-400 mt-4 border-none"> Update Profile </button>
+                        <button onClick={seeToast} type='submit' className="btn bg-amber-400 mt-4 border-none"> Update Profile </button>
 
                     </div>
 

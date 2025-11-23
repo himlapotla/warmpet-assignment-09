@@ -8,6 +8,7 @@ import Profile from "../componantes/mainComponents/Profile";
 import Forget from "../componantes/mainComponents/Forget";
 import Details from "../componantes/mainComponents/Details";
 import PrivateRout from "../Provider/PrivateRout";
+import Error from "../componantes/mainComponents/Error";
 
 
 const allRouter = createBrowserRouter([
@@ -54,6 +55,11 @@ const allRouter = createBrowserRouter([
             }
         ]
     },
+
+    {
+        path:'*/',
+        element: <Error> </Error>
+    }
 
 ])
 
