@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
 
@@ -34,15 +35,26 @@ const Footer = () => {
             </form>
 
             <div className="mt-14 px-10 md:px-20">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-gray-700">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-10 text-gray-700">
 
                     <div>
                         <h3 className="font-bold text-2xl text-amber-700">WarmPaws</h3>
                         <p className="text-gray-500 mt-2">
-                            Caring for your pets with love and expertise.  
+                            Caring for your pets with love and expertise.
                         </p>
 
-                       
+
+                    </div>
+
+                    <div>
+                        <h4 className="font-bold mb-3 text-lg"> Social Links </h4>
+                        <ul className="space-y-2 text-gray-600">
+                            <li className="hover:text-amber-500 cursor-pointer flex items-center gap-1"> <FaFacebook /> Facebook</li>
+                            <li className="hover:text-amber-500 cursor-pointer flex items-center gap-1"> <FaYoutube /> Youtube</li>
+                            <li className="hover:text-amber-500 cursor-pointer flex items-center gap-1"> <FaInstagram />
+                                Instagram</li>
+                            <li className="hover:text-amber-500 cursor-pointer flex items-center gap-1"> <FaWhatsapp /> Whatsapp</li>
+                        </ul>
                     </div>
 
                     <div>
