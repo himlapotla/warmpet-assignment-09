@@ -43,7 +43,7 @@ const allRouter = createBrowserRouter([
 
             {
                 path: 'detail/:id',
-                loader: () => fetch(" /cardsData.json "),
+                loader: () => fetch("/cardsData.json"),
                 hydrateFallbackElement: <Loading> </Loading>,
                 element: <PrivateRout> <Details> </Details> </PrivateRout>
             }

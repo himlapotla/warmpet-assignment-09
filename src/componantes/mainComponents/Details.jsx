@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useLoaderData, useParams } from 'react-router'
 import { toast } from 'react-toastify'
+import { AllContext } from '../../Provider/AuthProvider'
+import Loading from '../Loading'
 
 const Details = () => {
 
@@ -11,6 +13,7 @@ const Details = () => {
     const { id } = useParams()
     const data = useLoaderData()
     const [singlCade, setSingleCard] = useState(null)
+    const { loading } = useContext(AllContext)
 
     useEffect(() => {
         const viewOneFullCard = data.find(item => item.serviceId == id)
@@ -22,6 +25,7 @@ const Details = () => {
         e.target.reset()
     }
 
+    
     return (
 
         <div className="pt-11 px-4">
@@ -77,7 +81,10 @@ const Details = () => {
             }
         </div >
 
-    );
+    )
+
+
+
 
 }
 
