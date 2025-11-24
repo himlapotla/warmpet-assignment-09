@@ -2,12 +2,12 @@ import React from 'react'
 
 const PetProblems = () => {
   return (
-    // <div data-aos="fade-up" data-aos-offset="0" data-aos-anchor-placement="top-bottom">
+
     <div data-aos="fade-up" data-aos-offset="0" data-aos-anchor-placement="top-bottom">
 
         <div className="grid grid-cols-12 w-11/12 mx-auto gap-5">
 
-        <div className="col-span-3 border-3 border-amber-400 p-3 rounded-xl">
+        <div className="col-span-12 md:col-span-6 lg:col-span-3 border-3 border-amber-400 p-3 rounded-xl">
           <img
             className="rounded-2xl w-full h-52 object-cover"
             src="https://i.ibb.co/whjgy1FM/images-1.jpg"
@@ -22,7 +22,7 @@ const PetProblems = () => {
           </div>
         </div>
 
-        <div className="col-span-3 border-3 border-amber-400 p-3 rounded-xl">
+        <div className="col-span-12 md:col-span-6 lg:col-span-3 border-3 border-amber-400 p-3 rounded-xl">
           <img
             className="rounded-2xl w-full h-52 object-cover"
             src="https://i.ibb.co.com/yndP6DNn/dog-body-with-red-irritated-skin-due-to-allergy-1195895496-0d4372aa19254217b8c9218a3125a8c7.jpg"
@@ -37,7 +37,7 @@ const PetProblems = () => {
           </div>
         </div>
 
-        <div className="col-span-3 border-3 border-amber-400 p-3 rounded-xl">
+        <div className="col-span-12 md:col-span-6 lg:col-span-3 border-3 border-amber-400 p-3 rounded-xl">
           <img
             className="rounded-2xl w-full h-52 object-cover"
             src="https://i.ibb.co/gckwZ26/images-2.jpg"
@@ -52,7 +52,7 @@ const PetProblems = () => {
           </div>
         </div>
 
-        <div className="col-span-3 border-3 border-amber-400 p-3 rounded-xl">
+        <div className="col-span-12 md:col-span-6 lg:col-span-3 border-3 border-amber-400 p-3 rounded-xl">
           <img
             className="rounded-2xl w-full h-52 object-cover"
             src="https://i.ibb.co.com/TBKkCqLc/dd.jpg"

@@ -26,9 +26,8 @@ const Details = () => {
 
         <div className="pt-11 px-4">
             {singlCade ? (
-                <div className="w-8/12 mx-auto flex gap-6 items-center">
+                <div className="w-8/12 mx-auto flex flex-col lg:flex-row gap-6 items-center ">
 
-                    {/* Left: Service Card */}
                     <div className="bg-white rounded-2xl shadow-xl flex-1">
                         <div className="h-56">
                             <img
@@ -55,7 +54,6 @@ const Details = () => {
                         </div>
                     </div>
 
-                    {/* Right: Booking Form */}
                     <div className="flex-1 bg-white max-h-70 rounded-2xl shadow-xl p-6">
 
                         <form onSubmit={prvnt} className="space-y-4">

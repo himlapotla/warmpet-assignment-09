@@ -8,4 +8,4 @@ In this project the following npm packages are used-
 5. React icons has been usd.
 6. Aos has been installed to give the user better ui experience.
 
-live url - 
+live url - https://warmpaws-acb19.web.app/
