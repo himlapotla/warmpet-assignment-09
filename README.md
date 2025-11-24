@@ -1,16 +1,11 @@
-# React + Vite
+This project name is WarmPaws. Where anone can buy the winter cloths, take te pet care services in winter, can book a service and take the tips for their pets.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this project the following npm packages are used-
+1. react-router, since it is a single page application.
+2. Tailwindcss/daisyUI for better dsign.
+3. React toast to make visible the result of the users action.
+4. Fairbase has been installed to maintain the authentication system.
+5. React icons has been usd.
+6. Aos has been installed to give the user better ui experience.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+live url - 

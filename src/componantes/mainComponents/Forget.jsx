@@ -17,7 +17,6 @@ const Forget = () => {
             window.open(" https://mail.google.com/mail/u/0/#inbox ")
         })
         .catch((err) => {
-            console.log(err);
             
         })
     }

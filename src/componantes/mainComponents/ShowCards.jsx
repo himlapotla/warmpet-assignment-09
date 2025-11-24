@@ -3,8 +3,6 @@ import { Link } from 'react-router';
 
 const ShowCards = ({ singleCards }) => {
 
-    // console.log(singleCards);
-
     return (
 
         <div className=''>

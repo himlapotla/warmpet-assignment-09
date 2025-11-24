@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Cloth = ({ cloth }) => {
-    console.log(cloth);
     
     return (
         <div data-aos="fade-up" data-aos-offset="0" data-aos-anchor-placement="top-bottom" className="max-w-sm w-full mx-auto" >

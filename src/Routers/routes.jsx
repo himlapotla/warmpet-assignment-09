@@ -10,6 +10,8 @@ import Details from "../componantes/mainComponents/Details";
 import PrivateRout from "../Provider/PrivateRout";
 import Errorlyoutt from "../componantes/mainComponents/ErrorLayout/Errorlyoutt";
 import Error from "../componantes/mainComponents/ErrorLayout/Error";
+import Loading from "../componantes/Loading";
+import Service from "../componantes/mainComponents/Service";
 
 
 const allRouter = createBrowserRouter([
@@ -20,6 +22,7 @@ const allRouter = createBrowserRouter([
             {
                 path: '/',
                 loader: () => fetch("/cardsData.json"),
+                hydrateFallbackElement: <Loading> </Loading>,
                 element: <Home> </Home>
             },
 
@@ -34,8 +37,14 @@ const allRouter = createBrowserRouter([
             },
 
             {
+                path: '/service',
+                element: <Service> </Service>
+            },
+
+            {
                 path: 'detail/:id',
                 loader: () => fetch(" /cardsData.json "),
+                hydrateFallbackElement: <Loading> </Loading>,
                 element: <PrivateRout> <Details> </Details> </PrivateRout>
             }
         ]

@@ -8,9 +8,9 @@ const Navar = () => {
 
     const navigate = useNavigate()
 
-    const links = <>
+    const links = <> 
         <Link to={'/'}> <p className='font-semibold'>Home</p> </Link>
-        <p className='font-semibold'>Services</p>
+        <Link to={'/service'}> <p className='font-semibold'>Services</p> </Link>
         <Link to={'/profile'}> <p className='font-semibold'>My Profile</p> </Link>
     </>
 
