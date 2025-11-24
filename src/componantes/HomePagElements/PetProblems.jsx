@@ -2,7 +2,7 @@ import React from 'react'
 
 const PetProblems = () => {
   return (
-    <div>
+    <div data-aos="fade-up">
 
         <div className="grid grid-cols-12 w-11/12 mx-auto gap-5">
 

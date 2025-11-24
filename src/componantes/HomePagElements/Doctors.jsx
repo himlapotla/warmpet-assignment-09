@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const Doctors = ({doctor} ) => {
+const Doctors = ({ doctor }) => {
+
     return (
 
-        <div>
+        <div
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-anchor-placement="top-bottom"
+        >
 
             <div className="max-w-sm w-full bg-white rounded-2xl shadow-lg p-3 mx-auto h-full border-3 border-amber-400">
 
