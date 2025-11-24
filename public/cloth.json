@@ -1,0 +1,43 @@
+[
+  {
+    "id": 101,
+    "image": "https://i.ibb.co.com/zWs3Qg1s/w3.jpg",
+    "name": "Cozy Knitted Paw-Print Sweater",
+    "price": "$20.00",
+    "total_sold": 452,
+    "available_stock": 78,
+    "number_to_buy": "088 128965"
+  },
+  {
+    "id": 102,
+    "image": "https://i.ibb.co.com/67Qn6vHz/w2.jpg",
+    "name": "Sherpa-Lined Winter Hoodie",
+    "price": "$22.00",
+    "total_sold": 915,
+    "available_stock": 140,
+    "number_to_buy": "088 973752"
+  },
+  {
+    "id": 103,
+    "image": "https://i.ibb.co.com/qMrZWM1c/w4.jpg",
+    "name": "Waterproof Snow Vest Jacket",
+    "price": "$24.00",
+    "total_sold": 630,
+    "available_stock": 35,
+    "number_to_buy": "088 463026"
+  },
+  {
+    "id": 104,
+    "image": "https://i.ibb.co.com/LX1gWG2N/w1.jpg",
+    "name": "Fluffy Bear Fleece Pajamas",
+    "price": "$26.00",
+    "total_sold": 788,
+    "available_stock": 210,
+    "number_to_buy": "088 245486"
+  }
+]
+
+
+
+
+

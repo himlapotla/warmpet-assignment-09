@@ -2,7 +2,8 @@ import React from 'react'
 
 const PetProblems = () => {
   return (
-    <div data-aos="fade-up">
+    // <div data-aos="fade-up" data-aos-offset="0" data-aos-anchor-placement="top-bottom">
+    <div data-aos="fade-up" data-aos-offset="0" data-aos-anchor-placement="top-bottom">
 
         <div className="grid grid-cols-12 w-11/12 mx-auto gap-5">
 
